@@ -4,9 +4,9 @@
   "description": "Send and receive anonymous messages.",
   "main": "index.js",
   "scripts": {
-    "start": "Node_Env=prodction node src/index.js",
-    "dev" : "Node_Env=development nodemon src/index.js",
-    "test": "Node_Env=test jest"
+    "start": "NODE_ENV=prodction node src/index.js",
+    "dev" : "NODE_ENV=development nodemon src/index.js",
+    "test": "NODE_ENV=test jest"
   },
   "repository": {
     "type": "git",
