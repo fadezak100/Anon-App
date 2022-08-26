@@ -1,0 +1,36 @@
+{
+  "name": "anon-app",
+  "version": "1.0.0",
+  "description": "Send and receive anonymous messages.",
+  "main": "index.js",
+  "scripts": {
+    "start": "Node_Env=prodction node src/index.js",
+    "dev" : "Node_Env=development nodemon src/index.js",
+    "test": "Node_Env=test jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fadezak100/Anon-App.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fadezak100/Anon-App/issues"
+  },
+  "homepage": "https://github.com/fadezak100/Anon-App#readme",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "pg": "^8.8.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^28.1.8",
+    "eslint": "^8.22.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "jest": "^29.0.1",
+    "nodemon": "^2.0.19",
+    "supertest": "^6.2.4"
+  }
+}
