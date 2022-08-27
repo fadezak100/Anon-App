@@ -1,7 +1,8 @@
+const { join } = require('path');
+
 const getProfile = (req, res) => {
-  res.json({
-    msg: 'Hello World',
-  });
+  const path = join(__dirname, '..', '..', '..', 'public', 'pages', 'profile', 'index.html')
+  res.sendFile(path);
 };
 
 module.exports = getProfile;

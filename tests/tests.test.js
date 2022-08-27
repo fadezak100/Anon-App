@@ -4,7 +4,6 @@ const app = require('../src/app');
 const connection = require('../src/database/config/connection');
 const build = require('../src/database/config/build');
 const { getProfilesQuery, insertProfileQuery } = require('../src/database/queires/index');
-const exp = require('constants');
 
 beforeAll(() => build());
 afterAll(() => connection.end());
@@ -30,13 +29,26 @@ describe('Database test', () => {
 });
 
 describe('Test profile routes', () => {
-  test('/profile/id route should return status code of 200 and a response of type json', (done) => {
+  test('/profile route should return status code of 200 and a response of type json', (done) => {
     request(app)
-      .get('/profile/1')
-      .expect('content-type', /json/)
+      .get('/profile')
+      .expect('content-type', /html/)
       .end((err, res) => {
         if (err) return done(err);
         expect(res.status).toBe(200);
+        return done();
+      });
+  });
+});
+
+describe('Sign in tests', () => {
+  test('test /sign-in route', (done) => {
+    request(app)
+      .get('/sign-in')
+      .expect(200)
+      .end((err, res) => {
+        if (err) return done(err);
+        expect(res.type).toBe('text/html');
         return done();
       });
   });
