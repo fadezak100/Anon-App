@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap');
+
+* {
+   padding: 0;
+   margin: 0; 
+}
+
+body {
+    background-color: rgb(242,241,241);
+    font-family: 'Roboto', sans-serif;
+
+}
+
+a {
+ text-decoration: none;
+}
+
+.form {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form input {
+    position: relative;
+    width: 100%;
+    padding: 0.7rem;
+    border: none;
+    border: 1px solid #277BC0;
+    border-radius: 1rem;
+
+}
+
+.form input:focus{
+    transform: scale(1.1);
+}
+
+
+
+
+.username b, .password b{
+ margin-bottom: 0.5rem;  
+ padding-left: 0.5rem;  
+}
+
+
+.username, .password, .sign-in{
+    width: 80%;
+    display: flex;
+    flex-direction: column; 
+    margin: 1rem;  
+}
+
+
+.sign-in a {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    padding: 0.7rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: #277BC0;
+    color: white;
+    font-size: 1.4rem;
+}
+
+.sign-in a:hover {
+    transform: scale(1.1);
+    background-color: #FFB200;
+    color: black;
+    font-size: 1.4rem;
+}
+
+.con {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;    
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.error {
+    margin-top: 4rem;
+    background-color: red;
+    padding: 4rem 5rem;
+    opacity: 0.6;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 1rem;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.return {
+    width: 70%;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+.return a {
+    color: #277BC0;
+}
+.return a:hover {
+    color: black;
+    transform: scale(1.1);
+}
